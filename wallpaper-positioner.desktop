@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Wallpaper Positioner
+Comment=Bilder frei auf Canvas positionieren & Wallpaper für Hyprland/Wayland erstellen
+Exec=/home/lennart/Dokumente/Wallpaper_Positioner/run.sh %F
+Icon=preferences-desktop-wallpaper
+Terminal=false
+Type=Application
+Categories=Graphics;Utility;2DGraphics;
+MimeType=image/png;image/jpeg;image/webp;
+StartupNotify=true

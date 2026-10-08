@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wallpaper-positioner"
+version = "1.0.0"
+description = "Bilder frei auf Canvas positionieren & Wallpaper für Hyprland/Wayland erstellen"
+readme = "README.md"
+authors = [{ name = "Lennart" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "PyGObject>=3.44.0",
+    "Pillow>=9.0.0",
+    "numpy>=1.20.0",
+    "pycairo>=1.20.0",
+]
+
+[project.scripts]
+wallpaper-positioner = "wallpaper_positioner.main:run_app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["wallpaper_positioner*"]
